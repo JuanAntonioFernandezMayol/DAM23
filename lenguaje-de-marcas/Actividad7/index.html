@@ -6,6 +6,61 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <label for="fecha">Elija una fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            <form method="post" action="/send/" enctype="multipart/form-data">Elija un fichero:
+            <input type="file"></form>
+            <input type="radio" id="procesador" name="fav_language" value="procesador">
+            <label for="procesador">AMD</label>
+            <input type="radio" id="procesador" name="fav_language" value="procesador">
+            <label for="procesador">Intel i5</label>
+            <input type="radio" id="procesador" name="fav_language" value="procesador">
+            <label for="procesador">Intel i7</label>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <input type="radio" id="asignatura" name="fav_language" value="asignatura">
+            <label for="asignatura">Matemáticas</label>
+            <input type="radio" id="asignatura" name="fav_language" value="asignatura">
+            <label for="asignatura">Historia</label>
+            <input type="radio" id="asignatura" name="fav_language" value="asignatura">
+            <label for="asignatura">Geografía</label>
+            <input type="radio" id="asignatura" name="fav_language" value="asignatura">
+            <label for="asignatura">Lengua</label>
+            <br>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lname">Direccion:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <form method="post" action="/send/">
+                Elija un color:
+            <input type="color"> </form>
+            <br>
+            <textarea name="text" rows="10" cols="60" placeholder="Utilice este cuadro para escribir">
+            </textarea><br>
+            <label for="fecha">Elija una fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            <select id="cars" name="cars">
+                <option value="USB">Inglés</option>
+                <option value="Hola">Musica</option>
+                <option value="Adios">Plastica</option>
+            </select>
+            <form method="post" action="/send/">
+                Selecciona la fecha deseada:
+                <input type="time" value="">
+            </form>
+            <form method="post" action="/send/" enctype="multipart/form-data">Elija un fichero:
+            <input type="file"></form>
+            <input type="radio" id="Hombre" name="fav_language" value="Hombre">
+            <label for="Hombre">Hombre</label><br>
+            <input type="radio" id="Mujer" name="fav_language" value="Mujer">
+            <label for="Mujer">Mujer</label><br>
+        </fieldset>
+    </form>
 </body>
 </html>

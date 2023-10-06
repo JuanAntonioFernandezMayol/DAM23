@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend>Rellenar:</legend>
+        <input type="radio" id="Inglés" name="fav_language" value="Inglés">
+        <label for="Inglés">Inglés</label><br>
+        <input type="radio" id="Alemán" name="fav_language" value="Alemán">
+        <label for="Alemán">Alemán</label><br>
+        <input type="radio" id="Francés" name="fav_language" value="Francés">
+        <label for="Francés">Francés</label><br>
+        <select id="cars" name="cars">
+            <option value="USB">USB</option>
+            <option value="Hola">Hola</option>
+            <option value="Adios">Adios</option>
+        </select>
+        <br>
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Apellidos:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <legend>Indique sus preferencias por favor</legend>
+        <textarea name="message" rows="5" cols="15">Hombre          Mujer
+        </textarea><br>
+        <input type="radio" id="Hombre" name="fav_language" value="Hombre">
+        <label for="Hombre">Hombre</label><br>
+        <input type="radio" id="Mujer" name="fav_language" value="Mujer">
+        <label for="Mujer">Mujer</label><br>
+        <label for="birthday">Elija una fecha:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

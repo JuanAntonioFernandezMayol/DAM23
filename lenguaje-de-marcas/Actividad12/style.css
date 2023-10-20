@@ -1,0 +1,32 @@
+body { 
+    padding: 0px;
+    margin: 5px;
+    background-color: #EDBB99;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+main {
+    width: 100%;
+}
+
+.menu {
+    float: left;
+    width: 20%;
+    background-color: #E59866;
+}
+
+.contenido {
+    width: 80%;
+    float: right;
+    background-color: #E59866;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #873600;
+}

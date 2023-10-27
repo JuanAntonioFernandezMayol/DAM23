@@ -1,12 +1,14 @@
 body { 
     background-color: #EDBB99;
+    padding: 0%;
+    margin: 0%;
 }
 
 .title {
     margin-bottom: 15px;
 }
 
-.menu {
+nav {
     float: left;
     background-color: #E59866;
     padding-left: 15px;
@@ -16,9 +18,7 @@ body {
 .contenido {
     float: left;
     background-color: #E59866;
-    padding-left: 15px;
-    height: 350px;
-    
+    padding-left: 20px;
 }
 
 footer {

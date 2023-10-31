@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    background-color: blue;
+    color: white;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+    height: 80px;
+}
+h1{
+    font-weight: bold;
+    align-self: center;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+li a {
+    display: flex;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s ease;
+}
+a:hover {
+    font-size: 24px;
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    align-self: center;
+}

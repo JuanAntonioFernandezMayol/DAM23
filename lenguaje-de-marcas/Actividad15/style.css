@@ -9,6 +9,10 @@ h1 {
     text-align: center;
 }
 
+h4 {
+    color: rgb(175, 32, 175);
+}
+
 .targeta {
     width: 300px;
     height: 400px;

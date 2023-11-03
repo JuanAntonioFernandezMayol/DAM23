@@ -1,0 +1,30 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 6fr auto;
+}
+
+header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: blue;
+}
+aside {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: red;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: pink;
+}
+
+footer {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    background-color: rebeccapurple;
+}

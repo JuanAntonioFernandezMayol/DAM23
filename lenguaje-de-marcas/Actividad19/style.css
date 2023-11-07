@@ -65,4 +65,7 @@ input {
     ul {
     display: none;
 }
+    input {
+    display: none;
+    }
 }

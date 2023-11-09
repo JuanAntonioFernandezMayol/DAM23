@@ -26,5 +26,6 @@ public class Actividad35 {
         }
         System.out.println("Fin del juego");
         System.out.println("Has hundido en total " + barcosHundidos);
+        scaner.close();
     }
 }

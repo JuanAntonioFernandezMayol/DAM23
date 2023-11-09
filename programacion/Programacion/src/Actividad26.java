@@ -19,5 +19,6 @@ public class Actividad26 {
         }
     System.out.println(positive);
     System.out.println(negative);
+    scaner.close();
 }
 }

@@ -14,7 +14,7 @@ public class MonkeyIsland {
         int jugador = 0;
         int maquina = 0;
 
-        System.out.println("¡Bienvenido al Duelo de Insultos en Monkey Island! - Asalto Único\n");
+        System.out.println("¡Bienvenido a Monkey Island!\n");
 
         Random random = new Random();
         boolean turnoJugador = random.nextBoolean();

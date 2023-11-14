@@ -27,28 +27,28 @@ public class MonkeyIsland {
                 int opcionJugador = tomarTurnoJugador(scanner, insultos);
                 int opcionMaquina = tomarTurnoMaquina(insultos.length);
 
-                System.out.println("\nLa IA dice:");
+                System.out.println("\nLa maquina dice:");
                 System.out.println("╔══════════════════════╗");
-                System.out.println("║ " + insultos[opcionMaquina] + " ║");
+                System.out.println("║ " + insultos[opcionMaquina] + "  ║");
                 System.out.println("╚══════════════════════╝");
 
                 if ((opcionJugador + 1) % insultos.length == opcionMaquina) {
                     maquina++;
-                    System.out.println("\nLa IA ha ganado este turno.");
+                    System.out.println("\nLa maquina ha ganado este turno.");
                 } else {
                     jugador++;
                     System.out.println("\n¡Has ganado este turno!");
                 }
             } else {
-                System.out.println("Turno de la IA:");
+                System.out.println("Turno de la maquina:");
                 int opcionMaquina = tomarTurnoMaquina(insultos.length);
-                System.out.println("La IA elige: " + insultos[opcionMaquina]);
+                System.out.println("La maquina elige: " + insultos[opcionMaquina]);
 
                 int opcionJugador = tomarTurnoJugador(scanner, insultos);
 
                 if ((opcionJugador + 1) % insultos.length == opcionMaquina) {
                     maquina++;
-                    System.out.println("\nLa IA ha ganado este turno.");
+                    System.out.println("\nLa maquina ha ganado este turno.");
                 } else {
                     jugador++;
                     System.out.println("\n¡Has ganado este turno!");
@@ -63,11 +63,11 @@ public class MonkeyIsland {
         System.out.println("\n=== Resultado Final ===");
         System.out.println("Puntuación:");
         System.out.println("Jugador: " + jugador);
-        System.out.println("IA: " + maquina);
+        System.out.println("maquina: " + maquina);
         if (jugador > maquina) {
             System.out.println("¡Felicidades! Has ganado el duelo.");
         } else {
-            System.out.println("La IA ha ganado el duelo.");
+            System.out.println("La maquina ha ganado el duelo.");
         }
 
         scanner.close();
@@ -76,6 +76,7 @@ public class MonkeyIsland {
     public static int tomarTurnoJugador(Scanner scanner, String[] opciones) {
         System.out.println("Elige un insulto:");
         mostrarOpciones(opciones);
+        System.out.println("\n---------------------\n");
 
         return obtenerEntradaValida(scanner, opciones.length);
     }

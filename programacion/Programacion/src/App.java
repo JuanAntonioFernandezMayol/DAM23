@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    //public static void main(String[] args) throws Exception {
         //Ejercicios1.ejercicio1();
         //Ejercicios2.ejercicio2();
         //Actividad2.actividad2();
@@ -16,6 +16,6 @@ public class App {
         //Actividad33.actividad33();
         //Actividad34.actividad34();
         //Actividad35.actividad35();
-        MonkeyIsland.MonkeyIsland();
-    }
+        //MonkeyIsland.MonkeyIsland();
+    //}
 }

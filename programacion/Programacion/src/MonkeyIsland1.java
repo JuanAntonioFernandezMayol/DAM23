@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class MonkeyIsland {
+public class MonkeyIsland1 {
     public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
         String[] insultos = {

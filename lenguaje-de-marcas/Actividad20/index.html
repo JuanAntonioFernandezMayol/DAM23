@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
         </nav>
         </header>
         <main>
-        <div class="aboutme">
+        <div class="aboutme contedor">
             <div class="presentacion">
                 <h1>Sobre nosotros</h1>
                 <p>CIDETech es una empresa líder en soluciones tecnológicas, dedicada a traer las últimas innovaciones del mercado. Con una pasión por la tecnología y un compromiso con excelencia, nuestro objetivo es trasformar la manera en la que las empresas interactúan con sus clientes a través de soluciones digitales a medida.</p>
@@ -30,8 +30,8 @@
                 <img src="https://images.pexels.com/photos/3184422/pexels-photo-3184422.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipo de trabajo">
             </div>
         </div>
-        <div class="servicios">
-            <h2>Nuestros servicios</h2>
+        <h2>Nuestros servicios</h2>
+        <div class="servicios contenedor">
             <div class="infoServicios">
                 <img src="https://cdn-icons-png.flaticon.com/128/2554/2554838.png" alt="Diseño Grafico">
                 <h3>Diseño Grafico</h3>
@@ -53,8 +53,8 @@
                 <p>Asisencia tecnica y ayuda continua para todos nuestros productos y servicios</p>
             </div>
         </div>
-        <div class="portafolios">
-            <h2>Nuestro Portafolio</h2>
+        <h2>Nuestro Portafolio</h2>
+        <div class="portafolios contenedor">
             <div class="tarjetas">
                 <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ordenador de trabajo con fondo oscuro">
                 <h3>Proyecto 1</h3>
@@ -74,30 +74,33 @@
                 <a href="#">Ver Detalles</a>
             </div>
         </div>
-        <div class="contacto">
+        <div class="contacto contenedor">
+            <div class="infcontacto">
             <h3>Contactanos</h3>
             <p>Si tienes alguna consulta, no dudes en contactar con nostros a traves del siguiente formulario.</p>
-        
+            </div>
             <label for="nombre">Nombre:</label><br>
             <input type="text" name="nombre"><br>
             <label for="correo">Correo electronico:</label><br>
             <input type="text" name="correo"><br>
             <legend>Mensaje:</legend><br>
-            <textarea name="message" rows="5" cols="80">
+            <textarea name="message" rows="6">
             </textarea><br>
             <button>Enviar Mensaje</button>
         </div>
+        </main>
         <footer>
+        <div class="footer contenedor" >
         <div>
             <h3>CIDETech</h3>
             <p>CIDETech es una empresa lider en soluciones tecnologícas, dedicada a traer las ultimas innovaciones del mercado</p>
         </div>
         <div>
             <h3>Navegación</h3>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Servicios</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contacto</a>
+            <p><a href="#">Sobre nosotros</a></p>
+            <p><a href="#">Servicios</a></p>
+            <p><a href="#">Portfolio</a></p>
+            <p><a href="#">Contacto</a></p>
         </div>
         <div>
             <h3>Contactanos</h3>
@@ -112,8 +115,10 @@
             <a href=""><img src="instagram.svg" alt="Instagram"></a>
             <a href=""><img src="linkedin.svg" alt="Linkedin"></a>
         </div>
-        <p>© 2023 CIDETech | Diseñado por @JuanAntonioFernandez</p>
-        </footer>
-    </main>
+        </div>
+    <div class="footernombre">
+    <p>© 2023 CIDETech | Diseñado por <span>@JuanAntonioFernandez</span></p>
+    </div>
+    </footer>
 </body>
 </html>

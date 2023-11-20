@@ -50,11 +50,15 @@ nav input {
     align-self: center;
     outline: none;
 }
-
+.imagen {
+    width: 50%;
+    text-align: center;
+}
 .imagen img {
     width: 400px;
     height: 300px;
 }
+
 
 .aboutme {
     display: flex;
@@ -64,24 +68,24 @@ nav input {
     flex-wrap: wrap;
 }
 .presentacion {
-    flex-basis: 60%;
+    width: 50%;
     gap:20px;
 }
+
 .servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
-/* .servicios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+.infoServicios {
+    text-align: center;
+}
+
 
 .portafolios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 
 }
 .tarjetas {
@@ -124,6 +128,10 @@ nav input {
 .contacto textarea{
     width: 100%;
 }
+button {
+    margin-bottom: 20px;
+    height: 30px;
+}
 footer{
     background-color: rgb(104 101 101);
 }
@@ -134,9 +142,14 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
+.footer-nav p{
+    margin:3px;
+    font-weight: bold;
+}
 .contenedor {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 a {
@@ -144,7 +157,7 @@ a {
     color: white;
 }
 a img {
-    height: 20px;
+    height: 25px;
 }
 .footernombre {
     text-align: center;

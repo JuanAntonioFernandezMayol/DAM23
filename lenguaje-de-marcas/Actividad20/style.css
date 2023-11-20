@@ -1,6 +1,6 @@
 nav {
     display: flex;
-    background-color: blue;
+    background-color: #3498DB;
     color: white;
     justify-content: space-between;
     margin: 0px;
@@ -11,11 +11,12 @@ nav {
 }
 
 .icono-menu{
-    background-color: blue;
+    background-color: #3498DB;
     border: 0px;
     font-size: 36px;
     color: white;
     height: 100%;
+    margin: unset;
 }
 
 h1{
@@ -51,7 +52,7 @@ nav input {
     outline: none;
 }
 .imagen {
-    width: 50%;
+    width: 45%;
     text-align: center;
 }
 .imagen img {
@@ -69,13 +70,16 @@ nav input {
 }
 .presentacion {
     width: 50%;
-    gap:20px;
+    padding: 15px;
 }
 
 .servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+}
+.servicios h3 {
+    color: #3498DB;
 }
 .infoServicios {
     text-align: center;
@@ -93,7 +97,7 @@ nav input {
     text-align: center;
 }
 .tarjetas h3{
-    color:blue;
+    color: #3498DB;
 }
 .tarjetas a {
     text-decoration: none;
@@ -121,7 +125,7 @@ nav input {
 .contacto button {
     width: 100%;
     color: white;
-    background-color: blue;
+    background-color: #3498DB;
     border-radius: 5px;
     outline: none;
 }
@@ -154,6 +158,10 @@ footer{
 
 a {
     text-decoration: none;
+    color: #3498DB;
+    font-weight: bold;
+}
+footer a{
     color: white;
 }
 a img {
@@ -168,24 +176,116 @@ p span {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 1025px){
     .icono-menu{
         display: none;
     }
 }
 
 
-@media screen and (max-width: 820px){
-    ul {
+@media screen and (max-width: 1024px){
+    nav ul {
     display: none;
 }
+    .servicios{
+        grid-template-columns: 1fr 1fr;
+    }
+    .portafolios{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+    }
+    .contacto{
+        width: 100%;
+        padding: 0px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 95%;
+        padding: 10px;
+    }
+    .footernombre{
+        margin: 20px;
+        border-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 460px){
-    ul {
+@media screen and (max-width: 480px){
+    nav ul {
     display: none;
 }
-    input {
+    nav input {
     display: none;
+    }
+    .presentacion {
+        width: 100%;
+        text-align: center;
+    }
+    .imagen {
+        width: 100%;
+    }
+    .imagen img{
+        width: 300px;
+        height: 250px;
+        object-fit: contain;
+    }
+    .contenedor h2{
+        text-align: center;
+    }
+    .aboutme{
+        flex-direction: column;
+    }
+    .servicios{
+        grid-template-columns: 1fr;
+    }
+    .portafolios{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+    }
+    .contacto{
+        width: 100%;
+        padding: 0px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 10px;
+        gap: 0px;
+    }
+    .info-footer{
+        grid-row: 1/2;
+        text-align: left;
+    }
+    .footer-nav{
+        grid-row: 2/3;
+        margin: auto;
+        width: 65%;
+    }
+    .footer-contacto{
+        grid-row: 3/4;
+        margin:auto;
+        width: 65%;
+    }
+    .redes-sociales {
+        grid-row: 4/5;
+        text-align: center;
+        width: 65%;
+    }
+    .footernombre{
+        margin: 20px;
+        border-bottom: 20px;
+    }
+    .footer-centrado{
+        width: 80%;
+        margin: auto;
     }
 }

@@ -57,4 +57,35 @@ public class Coleccion {
         System.out.println(superheroes[superH].nombre);
         System.out.println("La fuerza maxima es: " + maxF);
     }
+
+    public void pintarMayorVida() {
+        int maxV = 0;
+        int x = 0;
+        int y = 1;
+        int superH = x;
+        while (x < superheroes.length - 1) {
+            if (superheroes[x].vida > superheroes[y].vida) {
+                maxV = superheroes[x].vida;
+                superH = x;
+            } else {
+                maxV = superheroes[y].vida;
+                superH = y;
+            }
+            x++;
+            y++;
+        }
+        System.out.println(superheroes[superH].nombre);
+        System.out.println("La vida maxima es: " + maxV);
+    }
+
+    public int pintarLegendarios() {
+        int legen = 0;
+        int i = 0;
+        while (i < superheroes.length) {
+            if ("legendario".equals(superheroes[i].rareza)) {
+                legen++;
+            }
+        }
+        return legen;
+    }
 }

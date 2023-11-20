@@ -14,12 +14,13 @@ public class ColeccionCartas {
         // Per fer:
         // Crida a un metode dins Coleccio, que pinti amb un println()
         // quin es el superheroe amb major vida i quin valor te vida
-
+        marvel.pintarMayorVida();
         // Per fer:
         // Crida a un metode dins Coleccio, que retorni amb un return
         // quantes cartes "legendaria" hi ha a la nostra coleccio
         // Guarda el valor dins la variable nLegen
         int nLegen = 0;
+        nLegen = marvel.pintarLegendarios();
 
     }
 
@@ -38,12 +39,12 @@ public class ColeccionCartas {
         String[] habilidadesSpiderman = { "Sentido arácnido", "Telarañas" };
         spiderman.habilidades = habilidadesSpiderman;
 
-        Superheroe ironman = new Superheroe("Ironman", 7, 7);
+        Superheroe ironman = new Superheroe("Ironman", 7, 9);
         ironman.descripcion = "Tecnologia Stark";
         ironman.rareza = "epico";
         ironman.habilidades = new String[] { "Volar", "Super fuerza" };
 
-        Superheroe thor = new Superheroe("Thor", 7, 8);
+        Superheroe thor = new Superheroe("Thor", 8, 8);
         thor.descripcion = "Thor, hijo de Odín";
         thor.rareza = "legendario";
         thor.habilidades = new String[] { "Volar", "Super fuerza", "Martillo" };

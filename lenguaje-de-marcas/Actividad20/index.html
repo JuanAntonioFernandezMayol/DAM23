@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="c0">
         <nav>
             <h1>CIDETech</h1>
             <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="">Portafolio</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="#c0">Inicio</a></li>
+            <li><a href="#c1">Sobre nosotros</a></li>
+            <li><a href="#c3">Portafolio</a></li>
+            <li><a href="#c5">Contacto</a></li>
             </ul>
             <input type="search" name="cerca" placeholder="Cerca...">
+            <button class="icono-menu">☰</button>
         </nav>
         </header>
         <main>
-        <div class="aboutme contedor">
+        <div class="fondogris">
+        <div id="c1" class="aboutme contenedor">
             <div class="presentacion">
                 <h1>Sobre nosotros</h1>
                 <p>CIDETech es una empresa líder en soluciones tecnológicas, dedicada a traer las últimas innovaciones del mercado. Con una pasión por la tecnología y un compromiso con excelencia, nuestro objetivo es trasformar la manera en la que las empresas interactúan con sus clientes a través de soluciones digitales a medida.</p>
@@ -30,8 +32,10 @@
                 <img src="https://images.pexels.com/photos/3184422/pexels-photo-3184422.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipo de trabajo">
             </div>
         </div>
+    </div>
+        <div id="c2" class="contenedor">
         <h2>Nuestros servicios</h2>
-        <div class="servicios contenedor">
+        <div class="servicios">
             <div class="infoServicios">
                 <img src="https://cdn-icons-png.flaticon.com/128/2554/2554838.png" alt="Diseño Grafico">
                 <h3>Diseño Grafico</h3>
@@ -53,8 +57,11 @@
                 <p>Asisencia tecnica y ayuda continua para todos nuestros productos y servicios</p>
             </div>
         </div>
+    </div>
+    <div class="fondogris">
+    <div id="c3" class="contenedor">
         <h2>Nuestro Portafolio</h2>
-        <div class="portafolios contenedor">
+        <div class="portafolios">
             <div class="tarjetas">
                 <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ordenador de trabajo con fondo oscuro">
                 <h3>Proyecto 1</h3>
@@ -74,41 +81,43 @@
                 <a href="#">Ver Detalles</a>
             </div>
         </div>
+    </div>
+</div>
         <div class="contacto contenedor">
             <div class="infcontacto">
             <h3>Contactanos</h3>
             <p>Si tienes alguna consulta, no dudes en contactar con nostros a traves del siguiente formulario.</p>
             </div>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" name="nombre"><br>
-            <label for="correo">Correo electronico:</label><br>
-            <input type="text" name="correo"><br>
-            <legend>Mensaje:</legend><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <label for="correo">Correo electronico:</label>
+            <input type="text" name="correo">
+            <label>Mensaje:</label>
             <textarea name="message" rows="6">
-            </textarea><br>
+            </textarea>
             <button>Enviar Mensaje</button>
         </div>
         </main>
         <footer>
-        <div class="footer contenedor" >
-        <div>
+        <div id="c5" class="footer contenedor">
+        <div class="info-footer">
             <h3>CIDETech</h3>
             <p>CIDETech es una empresa lider en soluciones tecnologícas, dedicada a traer las ultimas innovaciones del mercado</p>
         </div>
-        <div>
+        <div class="footer-nav">
             <h3>Navegación</h3>
-            <p><a href="#">Sobre nosotros</a></p>
-            <p><a href="#">Servicios</a></p>
-            <p><a href="#">Portfolio</a></p>
-            <p><a href="#">Contacto</a></p>
+            <p><a href="#c1">Sobre nosotros</a></p>
+            <p><a href="#c2">Servicios</a></p>
+            <p><a href="#c3">Portfolio</a></p>
+            <p><a href="#c4">Contacto</a></p>
         </div>
-        <div>
+        <div class="footer-contacto">
             <h3>Contactanos</h3>
             <p>971606499</p>
             <p>info@cidetech.com</p>
             <p>Carrer de l'Arner 3, Palma</p>
         </div>
-        <div>
+        <div class="redes-sociales">
             <h3>Redes Sociales</h3>
             <a href=""><img src="facebook.svg" alt="facebook"></a>
             <a href=""><img src="x-twitter.svg" alt="X"></a>

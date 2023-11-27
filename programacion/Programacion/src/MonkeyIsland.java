@@ -71,7 +71,7 @@ public class MonkeyIsland {
             }
 
             System.out.println("\n---------------------\n");
-            Thread.sleep(2000); // Añade un retraso de 2 segundos entre turnos
+            Thread.sleep(2000);
         }
 
         System.out.println("\n=== Resultado Final ===");

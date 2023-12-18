@@ -21,8 +21,9 @@ public class Actividad42 {
         // }
 
         // por cada elemento de semana se le imprime dia
-        semana.forEach(dia -> System.out.println(dia));
-
+        //semana.forEach(dia -> System.out.println(dia));
+        
+        //Asi se imprime directamente como si fuera un array
         System.out.println(semana.toString());
     }
 }

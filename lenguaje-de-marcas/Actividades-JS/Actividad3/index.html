@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div">
+    <p>Hola Mundo!</p>
+    </div>
+    <div>
+    <button id="ing" onclick="ing">Ingles</button>
+    <button id="cast" onclick="cast">Castellano</button>
+    </div>
+    <script>
+    const ing = document.getElementById("ing")
+    ing.addEventListener("click", function(){
+    let p = document.getElementById("div");
+    p.textContent = "Hello Word!"
+    });
+    const cast = document.getElementById("cast")
+    cast.addEventListener("click", function(){
+    let p = document.getElementById("div");
+    p.textContent = "Hola Mundo!"
+    });
+
+    const color = document.getElementById("cast")
+    color.onmouseover = function (event) {
+    let taget = event.target;
+    target.style.background = "blue";
+    }
+    </script>
+</body>
+</html>

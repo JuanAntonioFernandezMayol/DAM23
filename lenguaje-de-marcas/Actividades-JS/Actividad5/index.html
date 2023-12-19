@@ -12,13 +12,13 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates debitis sed esse repellat nemo nisi odio nostrum non hic! este cambia de color</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates debitis sed esse repellat nemo nisi odio nostrum non hic!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates debitis sed esse repellat nemo nisi odio nostrum non hic! este cambia de color</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates debitis sed esse repellat nemo nisi odio nostrum non hic!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. hola Tenetur voluptates debitis sed esse repellat nemo nisi odio nostrum non hic!</p>
     </div>
     <script>
     let ps = document.getElementsByTagName("p");
     i = 0;
     while (ps.length > i){
-        if(ps[i].textContent.length > 150){
+        if(ps[i].textContent.length > 150 || ps[i].textContent.includes("hola")){
             ps[i].classList.add("div");
             ps[i].addEventListener("click", function(){
             alert("Hola, soy una alerta!")})

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div">
+    <p>Hola Mundo! Estoy dentro de un contenedor que cambia de color!</p>
+    </div>
+    <div>
+    <button id="cambio">Cambia color</button>
+    <button id="normal">Vuelve color</button>
+    </div>
+    <script>
+    let cambio = document.getElementById("cambio")
+    cambio.addEventListener("click", function(){
+    let cambiodiv = document.getElementById("div");
+    cambiodiv.classList.add("div");
+    })
+    let vuelve = document.getElementById("normal")
+    vuelve.addEventListener("click", function(){
+    let cambiodiv = document.getElementById("div");
+    cambiodiv.classList.remove("div")
+    })
+    </script>
+</body>
+</html>

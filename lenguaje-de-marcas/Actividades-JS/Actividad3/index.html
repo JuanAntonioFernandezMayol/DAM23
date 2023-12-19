@@ -26,11 +26,18 @@
     p.textContent = "Hola Mundo!"
     });
 
-    const color = document.getElementById("cast")
-    color.onmouseover = function (event) {
-    let taget = event.target;
-    target.style.background = "blue";
-    }
+    const btncolor = document.getElementById("cast")
+    btncolor.addEventListener("mouseover", function(){
+    let btncolor = document.getElementById("cast");
+    document.getElementById("cast").style.backgroundColor = "grey"
+    });
+
+    const btncolor2 = document.getElementById("cast")
+    btncolor2.addEventListener("mouseout", function(){
+    let btncolor2 = document.getElementById("cast");
+    document.getElementById("cast").style.backgroundColor = "white"
+    });
+    
     </script>
 </body>
 </html>

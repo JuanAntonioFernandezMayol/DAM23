@@ -1,17 +1,21 @@
 import pygame
+from elementos import Nave
+from elementos import Fondo
 
 pygame.init()
 pantalla = pygame.display.set_mode((800,600))
-
-imagen_tanke = pygame.image.load("tanke.png")
-tanke = pygame.transform.scale(imagen_tanke, (190,130))
+reloj = pygame.time.Clock()
+FPS = 60
+# imagen_tanke = pygame.image.load("tanke.png")
+#tanke = pygame.transform.scale(imagen_tanke, (190,130))
 #tanke rect = tanke.get_rect()
 
 salir = False
+nave = Nave()
+fondo = Fondo()
 
-posIzda = 30
-posTop = 30
 while not salir:
+    reloj.tick(60)
     #Gestionar eventos
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -19,19 +23,19 @@ while not salir:
             
     teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
-        posIzda -= 1
+        nave.moverIzquierda()
     if teclas[pygame.K_RIGHT]:
-        posIzda += 1
-    if teclas[pygame.K_UP]:
-        posTop -= 1
-    if teclas[pygame.K_DOWN]:
-        posTop += 1
+        nave.moverDerecha()
+    #if teclas[pygame.K_UP]:
+        
+    #if teclas[pygame.K_DOWN]:
+        
         
     #Gestionar cambios
-    pantalla.fill((255,0,255))
-    
+    fondo.dibujar()
+    nave.dibujar()
     #pygame.draw.rect(pantalla,(255,255,255), pygame.Rect(posIzda,posTop,60,60))
-    pantalla.blit(tanke, (posIzda, posTop))
+    #pantalla.blit(tanke, (posIzda, posTop))
     #Redibujar el juego
     pygame.display.flip()
     

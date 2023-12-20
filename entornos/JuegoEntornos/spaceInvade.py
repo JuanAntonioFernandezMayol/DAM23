@@ -16,20 +16,28 @@ FPS = 60
 running = True
 
 #Creamos la nave
-posicion = (200,200)
+posicion = (360,500)
 nave = elementos.Nave(posicion)
 
 #Creamos un grupo de sprites
-grupo_sprites = pygame.sprite.Group(nave)
-grupo_sprites.add(elementos.Nave((100,100)))
-grupo_sprites.add(elementos.Nave((200,100)))
-grupo_sprites.add(elementos.Nave((300,100)))
+# grupo_sprites = pygame.sprite.Group()
+# grupo_sprites.add(elementos.Fondo())
+# grupo_sprites.add(elementos.Nave((470,100)))
+# # grupo_sprites.add(elementos.Nave((200,100)))
+# # grupo_sprites.add(elementos.Nave((300,100)))
+grupo_sprite_todos = pygame.sprite.Group()
+grupo_sprite_enemigos = pygame.sprite.Group()
+grupo_sprite_balas = pygame.sprite.Group()
 
-enemigo = elementos.Enemigo((50,50))
-grupo_sprites.add(enemigo)
+grupo_sprite_todos.add(elementos.Fondo((0,0)))
+grupo_sprite_todos.add(nave)
+
+
+# enemigo = elementos.Enemigo((50,50))
+# grupo_sprites.add(enemigo)
 #Creamos una variable que almacena la ultima vez que se creo un enemigo
 ultimo_enemigo_creado = 0
-frecuencia_creacion_enemigos = 200
+frecuencia_creacion_enemigos = 2000
 #Creamos el bucle principal
 while running:
     #limitamos el bucle al framerate que hemos definido
@@ -44,17 +52,24 @@ while running:
     momento_actual = pygame.time.get_ticks()
     if (momento_actual > ultimo_enemigo_creado + frecuencia_creacion_enemigos):
         cordX = random.randint(0, pantalla.get_width())
-        cordY = 0
-        grupo_sprites.add(elementos.Enemigo((cordX, cordY)))
+        cordY = -200
+        #Creamos el enemigo y lo añadismos a los grupos.
+        enemigo = elementos.Enemigo((cordX, cordY))
+        grupo_sprite_todos.add(enemigo)
+        grupo_sprite_enemigos.add(enemigo)
+        #Actualizamos el momento del ultimo enemigo creado
         ultimo_enemigo_creado = momento_actual
         
     #Capturamos las teclas
     teclas = pygame.key.get_pressed()
+    # if teclas[pygame.K_SPACE]:
+    #     nave.disparar(grupo_sprite_todos)
+    
     
     #Pintamos
     pantalla.fill((255, 255, 255))
-    grupo_sprites.update(teclas)
-    grupo_sprites.draw(pantalla)
+    grupo_sprite_todos.update(teclas, grupo_sprite_todos, grupo_sprite_balas)
+    grupo_sprite_todos.draw(pantalla)
 
 
     #Redibujar la pantalla

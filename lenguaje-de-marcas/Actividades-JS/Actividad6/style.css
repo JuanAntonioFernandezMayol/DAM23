@@ -1,0 +1,325 @@
+nav {
+    display: flex;
+    background-color: #3498DB;
+    color: white;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+    height: 70px;
+    width: auto;
+    align-items: center;
+}
+
+.icono-menu{
+    background-color: #3498DB;
+    border: 0px;
+    font-size: 36px;
+    color: white;
+    height: 100%;
+    margin: unset;
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+}
+.menu-contenido{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    color: black;
+}
+.menu-contenido a{
+    display: block;
+    color: black;
+}
+.show {
+    display: block;
+}
+
+h1{
+    font-weight: bold;
+    align-self: center;
+    font-size: 36px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+li a {
+    display: flex;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s ease;
+}
+li a:hover {
+    font-size: 24px;
+}
+
+nav input {
+    height: 30px;
+    border-radius: 5px;
+    align-self: center;
+    outline: none;
+}
+.imagen {
+    width: 45%;
+    text-align: center;
+}
+.imagen img {
+    width: 400px;
+    height: 300px;
+}
+
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.fondogris{
+    background-color: lightgrey;
+    padding: 15px;
+}
+    .presentacion {
+    width: 50%;
+    padding: 15px;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.servicios h3 {
+    color: #3498DB;
+}
+.infoServicios {
+    text-align: center;
+    padding: 20px 0px;
+    transition: all 500ms;
+}
+
+
+.portafolios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.tarjetas {
+    text-align: center;
+    transition: all 500ms;
+    box-shadow: 0px 0px 10px grey ;
+}
+.tarjetas h3{
+    color: #3498DB;
+}
+.tarjetas a {
+    text-decoration: none;
+}
+.tarjetas img {
+    height: auto;
+    width: 100%;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+.infcontacto {
+    text-align: center;
+
+}
+.contacto input {
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    outline: none;
+}
+.contacto label {
+    margin-bottom: 10px;
+}
+.contacto button {
+    color: white;
+    background-color: #3498DB;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+button {
+    margin-bottom: 20px;
+    height: 30px;
+}
+footer{
+    background-color: grey;
+}
+.footer {
+    color: white;
+    display: grid;
+    padding: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-nav p{
+    margin:3px;
+    font-weight: bold;
+}
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #3498DB;
+    font-weight: bold;
+}
+footer a{
+    color: white;
+}
+a img {
+    height: 25px;
+}
+.footernombre {
+    text-align: center;
+    color: white;
+}
+p span {
+    color:darkviolet;
+    text-decoration: underline;
+}
+
+.infoServicios:hover {
+    transform: scale(1.05);
+}
+.tarjetas:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1025px){
+    .icono-menu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    nav ul {
+    display: none;
+}
+    .servicios{
+        grid-template-columns: 1fr 1fr;
+    }
+    .portafolios{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    .contacto{
+        width: 100%;
+        padding: 0px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 95%;
+        padding: 10px;
+    }
+    .footernombre{
+        margin: 20px;
+        border-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    nav ul {
+    display: none;
+}
+    nav input {
+    display: none;
+    }
+    .presentacion {
+        width: 100%;
+        text-align: center;
+    }
+    .imagen {
+        width: 100%;
+    }
+    .imagen img{
+        width: 300px;
+        height: 250px;
+        object-fit: contain;
+    }
+    .contenedor h2{
+        text-align: center;
+    }
+    .aboutme{
+        flex-direction: column;
+    }
+    .servicios{
+        grid-template-columns: 1fr;
+    }
+    .portafolios{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    .contacto{
+        width: 100%;
+        padding: 0px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 10px;
+        gap: 0px;
+    }
+    .info-footer{
+        grid-row: 1/2;
+        text-align: left;
+        width: 80%;
+    }
+    .footer-nav{
+        grid-row: 2/3;
+        margin: auto;
+        width: 65%;
+    }
+    .footer-contacto{
+        grid-row: 3/4;
+        margin:auto;
+        width: 65%;
+    }
+    .redes-sociales {
+        grid-row: 4/5;
+        text-align: center;
+        width: 65%;
+    }
+    .footernombre{
+        margin: 20px;
+        border-bottom: 20px;
+    }
+    .footer-centrado{
+        width: 80%;
+        margin: auto;
+    }
+}

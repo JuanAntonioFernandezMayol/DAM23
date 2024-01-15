@@ -11,6 +11,7 @@ public class Cuenta {
     public String getNombre() {
         return nombre;
     }
+    
 
     public String getnumerodecuenta() {
         return numerodecuenta;

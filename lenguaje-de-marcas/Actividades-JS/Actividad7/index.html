@@ -7,29 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedor-pendientes">
-        <div class="tareas-pendientes">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+    <header>To - Do - List</header>
+    <form>
+        <input type="text" placeholder="Inserta tu tarea" class="todo_input">
+        <button class="todo_button" type="submit">
+            <i class="fas"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter_todo">
+                <option value="all">Todo</option>
+                <option value="completed">Completado</option>
+                <option value="uncompleted">Incompleto</option>
+            </select>
         </div>
-    </div>
-    <div class="contenedor-tareas">
-        <div class="tareas">
-            <input type="text">
-            <button>Enviar</button>
-        </div>
-    </div>
-    <div class="contenedor-completadas">
-        <div class="tareas-completadas">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+    </form>
+    <div class="todo_container">
+        <ul class="todo_list"></ul>
     </div>
     <script src="app.js"></script>
 </body>

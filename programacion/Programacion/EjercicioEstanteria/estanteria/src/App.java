@@ -4,14 +4,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class App {
+    final static Scanner escaner = new Scanner(System.in);
+    static List<libro> Estanteria = new ArrayList<>();;
 
     public static void main(String[] args) throws Exception {
-        final Scanner escaner = new Scanner(System.in);
-        List<libro> Estanteria;
+
         System.out.println("----------------------");
         System.out.println("Bienvenido a la Estanteria de libros!");
         System.out.println("----------------------");
-        Estanteria = new ArrayList<>();
+
         Integer maxIdLibro = 1;
 
         System.out.println("----------------------");
@@ -55,34 +56,34 @@ public class App {
         System.out.println("No hay mas libros.");
     }
 
-    private static void agregarLibro(Integer maxIdLibro, Scanner escaner) {
+    private static void agregarLibro(Integer maxIdLibro) {
         Integer ID = maxIdLibro;
         System.out.println("Nombre del llibro: ");
         String nombre = escaner.nextLine();
         System.out.println("Autor del llibro: ");
         String autor = escaner.nextLine();
         System.out.println("Qualificación del llibro: ");
-        String qualificacion = escaner.nextLine();
+        Integer qualificacion = leerNumero();
         libro libro = new libro(nombre, autor, qualificacion);
         Estanteria.add(libro);
         ID++;
     }
 
-    private static void eliminarLibroTitulo() {
+    private static void eliminarLibroTitulo(String titol, Integer maxIdLibro) {
         System.out.println("Que libro quieres eliminar");
         Integer borrar = leerNumero();
-        if(borrar == id){
-            Estanteria.remove(libro.titol)
+        if (borrar == maxIdLibro) {
+            Estanteria.remove(libro.titol);
         }
     }
 
-    private static void eliminarLibroAutor() {
+    private static void eliminarLibroAutor(String autor, Integer maxIdLibro) {
         System.out.println("Que libro quieres eliminar");
         Integer borrar = leerNumero();
-        if(borrar == id){
-            libro.remove(libro.autor)
+        if (borrar == maxIdLibro) {
+            Estanteria.remove(libro.autor);
         }
-        
+
     }
 
     private static void top10() {
@@ -97,6 +98,10 @@ public class App {
     }
 
     private static int leerNumero() {
-        return Integer.valueOf(escaner.nextLine());
+        return Integer.valueOf(escaner.nextInt());
+    }
+
+    private static String leerString() {
+        return String.valueOf(escaner.nextLine());
     }
 }
